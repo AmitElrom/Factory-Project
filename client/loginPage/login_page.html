@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login_page.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script src="login_page.js"></script>
+</head>
+<body class="container">
+
+    <h1 class="my-5">Log In Factory Managment</h1>
+
+    <div>
+        <div>
+            <div class="row justify-content-center">
+                <div class="form-group col-4">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter Username">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="form-group col-4">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                </div>
+            </div>
+        </div>
+       
+        <div id="loginBtn">
+            <button type="submit" class="btn btn-primary" onclick="UserAuthentication()" >LOGIN</button>
+        </div>
+
+    </div>
+</body>
+</html>

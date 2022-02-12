@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Department Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script src="editDepartment.js"></script>
+</head>
+<body onload="GetDepartment(), sessionStorageUser(), userActions()" class="container">
+
+    <h1>Edit Department <input type="button" value="Back To Departments" class="btn btn-primary" 
+      onclick="location.href = '../departmentsPage/departments.html';"></h1>
+
+
+    <div>
+
+        <div class="form-group">
+            <label for="dep_name">Department Name</label>
+            <input type="text" class="form-control" id="dep_name" />
+            <small class="form-text text-muted"
+              >Make sure first letter of department name is capitalized.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="manager">Manager</label>
+            <select class="form-control" id="manager">
+                <option value="" id="current_manager"></option>
+            </select>
+            <ul>
+              <li>
+                <small class="form-text text-muted"
+                  >In order to define a manager that he/she is already an existing
+                  manager of a department, first make sure you replace this department's
+                  manager.</small
+                >
+              </li>
+              <li>
+                <small class="form-text text-muted"
+                  >All the displayed employees are not existing department
+                  managers (except from current manager) 
+                  or employees that does not have a department yet.</small
+                >
+              </li>
+              <li>
+                <small class="form-text text-muted"
+                  >The ex manager becomes a non manager employee.</small
+                >
+              </li>
+            </ul>
+          </div>
+
+    </div>
+
+    <input type="button" value="Update" class="btn btn-primary" onclick="UpdateDepartment()" />
+
+    
+</body>
+</html>

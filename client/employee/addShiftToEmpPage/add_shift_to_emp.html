@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Shift To Employee Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script src="add_shift_to_emp.js"></script>
+  </head>
+  <body onload="loadAddShiftPage(), sessionStorageUser(), userActions()" class="container">
+    <h1>Add Shift to Employee</h1>
+
+    <div class="form-group">
+      <label for="select_shift">
+        <p>Employee : <span id="employee_name"></span></p>
+        <p>Employee ID : <span id="employee_id"></span></p>
+      </label>
+      <select multiple class="form-control" id="select_shift">
+      </select>
+      <small class="form-text text-muted"
+              >You can choose only one shift for the employee.</small>
+    </div>
+
+    <input type="button" value="Add Shift To Employee" class="btn btn-primary" onclick="AddShiftToEmployee()" />
+
+  </body>
+</html>

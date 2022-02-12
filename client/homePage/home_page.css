@@ -1,0 +1,13 @@
+body
+{
+    background-image: url("../images/factory_ing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#contents
+{
+    text-align: center;
+    font-size: xx-large;
+}

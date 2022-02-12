@@ -1,0 +1,18 @@
+body
+{
+    background-image: url("../images/factory_img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h1
+{
+    text-align: center;
+}
+
+
+#loginBtn
+{
+    text-align: center;
+}

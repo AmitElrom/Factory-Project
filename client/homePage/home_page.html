@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home_page.css">
+    <script src="../sessionStorageUser.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script src="home_page.js"></script>
+</head>
+<body onload="sessionStorageUser()//, userActions()">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <a class="navbar-brand" href="file:///C:/Users/user/Desktop/fullsatck/Factory/client/homePage/home_page.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Full Name - <span id="fullname_span"></span></a>
+            <a class="nav-item nav-link active" href="#">Credit Count - <span id="credit_count"><span></a>
+            <a class="nav-item nav-link active" href="file:///C:/Users/user/Desktop/fullsatck/Factory/client/loginPage/login_page.html">Log Out</a>
+          </div>
+        </div>
+    </nav>
+
+    <div>
+      <h1 class="d-flex justify-content-center my-5">Factory Home Page</h1>
+
+      <div id="contents">
+        <a href="../employee/employeesPage/employees.html">Employees</a> <br>
+        <a href="../department/departmentsPage/departments.html">Departments</a> <br>
+        <a href="../shift/shiftsPage/shifts.html">Shifts</a> <br>
+      </div>
+    </div>
+</body>
+</html>
